@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    font-family: "Karma", sans-serif;
+}
+
+body {
+    height: 200vh;
+}
+
+/* start of static header */
+.staticHeader {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(224, 222, 222, 0.519);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.static {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 9%;
+}
+
+.static div {
+    font-size: 25px;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.static div:not(:nth-child(2)):hover {
+    background-color: rgba(224, 222, 222);
+}
+
+/* end of static header */
+/* start of first page */
+.grid1 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 12% repeat(4, 18%) 12%;
+    grid-template-rows: 15% 55% 30%;
+    grid-template-areas:
+        "h h h h h h"
+        ". s1 s2 s3 s4 ."
+        ". t1 t2 t3 t4 .";
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.header {
+    grid-area: h;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.s1 {
+    grid-area: s1;
+}
+
+.s2 {
+    grid-area: s2;
+}
+
+.s3 {
+    grid-area: s3;
+}
+
+.s4 {
+    grid-area: s4;
+}
+
+/* text under photos1 */
+h3 {
+    padding: 5px 0 25px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.t1 {
+    grid-area: t1;
+}
+
+.t2 {
+    grid-area: t2;
+}
+
+.t3 {
+    grid-area: t3;
+}
+
+.t4 {
+    grid-area: t4;
+}
+
+/* end of first page */
+/* start of second page */
+.grid2 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 12% repeat(4, 18%) 12%;
+    grid-template-rows: 15% 55% 30%;
+    grid-template-areas:
+        "h2 h2 h2 h2 h2 h2"
+        ". s5 s6 s7 s8 ."
+        ". t5 t6 t7 t8 .";
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.header2 {
+    grid-area: h;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.s5 {
+    grid-area: s5;
+}
+
+.s6 {
+    grid-area: s6;
+}
+
+.s7 {
+    grid-area: s7;
+}
+
+.s8 {
+    grid-area: s8;
+}
+
+/* text under photos2 */
+h3 {
+    padding: 5px 0 25px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.t5 {
+    grid-area: t5;
+}
+
+.t6 {
+    grid-area: t6;
+}
+
+.t7 {
+    grid-area: t7;
+}
+
+.t8 {
+    grid-area: t8;
+}
+
+/* end of second page */
+/* start of third page */
+.line {
+    height: 1.5px;
+    width: 76%;
+    margin: 15px auto;
+    background-color: rgba(224, 222, 222, 0.519);
+}
+
+.footer {
+    width: 100%;
+    padding: 15px 15px 30px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 35px;
+}
+
+.footer div {
+    display: inline-flex;
+    font-size: 17px;
+    margin: 0 10px;
+    padding: 5px 7px;
+    background-color: rgb(224, 222, 222);
+}
+
+.footer div:hover {
+    background-color: #000;
+    color: white;
+}
+
+
+/* end of third page */
